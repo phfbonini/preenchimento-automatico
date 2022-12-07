@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formulário Para Certificado de Registro</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="main-container">
+    <h1>Formulário para CR</h1>
+
+    <form id="register-form" action="">
+      <div class="half-box spacing"">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" placeholder="Digite seu nome completo" data-min-length="2" data-email-validate>
+      </div>
+      <div class="half-box">
+        <label for="lastname">CPF</label>
+        <input type="number" placeholder="Digite seu CPF" data-required>
+    </div>
+
+     
+      <div class="half-box spacing">
+          <label for="name">RG: </label> 
+          <input type="number" id="rg" placeholder="Digite seu RG" data-required data-min-length="9" data-max-length="9">
+      </div>
+      <div class="half-box">
+          <label for="lastname">Orgão Expedidor</label>
+          <input type="number" placeholder="Expedidor do Documento" data-required>
+      </div>
+      
+
+     
+      <div class="half-box spacing">
+        <label for="lastname">Estado Civil</label>
+        <input type="text" placeholder="Seu estado Civil" data-required>
+      </div>
+      <div class="half-box">
+        <label for="passconfirmation">Profissão</label>
+        <input type="text" placeholder="Digite sua profissão">
+      </div>
+
+
+      <div class="half-box spacing">
+        <label for="lastname">Naturalidade</label>
+        <input type="text" placeholder="Digite a cidade onde nasceu" data-required>
+      </div>
+      <div class="half-box">
+        <label for="passconfirmation">Nascimento</label>
+        <input type="date">
+      </div>
+
+      <div class="half-box spacing">
+        <label for="lastname">Filiação</label>
+        <input type="text" placeholder="Nome do Pai e/ou da Mãe" data-required>
+      </div>
+      <div class="half-box">
+        <label for="passconfirmation">Nascimento</label>
+        <input type="date">
+      </div>
+
+      <div class="half-box spacing">
+        <label for="lastname">Endereço</label>
+        <input type="text" placeholder="Nome da Rua e número" data-required>
+      </div>
+      <div class="half-box">
+        <label for="passconfirmation">Bairro</label>
+        <input type="text" placeholder="Nome do Bairro">
+      </div>
+
+      <div class="half-box spacing">
+        <label for="lastname">Cidade</label>
+        <input type="text" placeholder="Cidade de Residência" data-required>
+      </div>
+      <div class="half-box">
+        <label for="passconfirmation">CEP</label>
+        <input type="number" placeholder="00000-000">
+      </div>
+
+      <div class="half-box spacing">
+        <label for="lastname">Procurador</label>
+        <input type="text" placeholder="Cidade de Residência" data-required>
+      </div>
+      <div class="half-box">
+        <label for="passconfirmation">CEP</label>
+        <input type="number" placeholder="00000-000">
+      </div>
+
+      
+      <div class="full-box">
+        <input id="btn-submit" type="submit" value="Enviar">
+      </div>
+    </form>
+  </div>
+  <p class="error-validation template"></p>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
